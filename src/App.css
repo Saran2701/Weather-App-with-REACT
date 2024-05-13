@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding:0;
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width:350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.input-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 3px solid #cef370;
+  border-radius: 10px;
+  overflow:hidden;
+}
+.city-input{
+  flex :1;
+  height: 30px;
+  border: none;
+  font-size: 18px;
+  outline: none;
+}
+
+.search-icon img{
+  padding: 16px;
+  height: 28px;
+  object-fit: contain;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.image{
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+
+.image img{
+  width: 160px;
+  height: 160px;;
+}
+
+.temp,.location,.country{
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.location{
+  color:gold;
+  font-weight: 500;
+  font-size: 40px;
+}
+.country{
+  font-size: 25px;
+  color: #888;
+  font-weight: 500;
+}
+
+.cord{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.cord div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.cord div span{
+  font-size: 15px;
+}
+humidity-percent,wind-percent,
+.cord div span:nth-child(2){
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+  padding-top: 6px;
+}
+
+.data-container img{
+  width:30px;
+  padding:10px;
+}
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+.data{
+  margin-right:45px;
+}
+.text{
+  font: size 12px;
+  color: #888;
+}
+
+.owner{
+  text-align: center;
+  padding-top: 50px;
+  color: #888;
+  font-size: 12px;
+}
+.owner span{
+  color: #333;
+}
+
+.loading,.error,.city-notfound{
+  margin-top: 10px;
+  color: #888;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* For screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%; /* Adjust width as needed */
+    max-width: 350px; /* Set maximum width */
+  }
+  
+  .image img {
+    width: 120px; /* Adjust image size */
+    height: 120px; /* Adjust image size */
+  }
+  
+  .temp, .location, .country {
+    font-size: 25px; /* Decrease font size */
+  }
+  
+  .cord {
+    flex-direction: column; /* Stack coordinates vertically */
+  }
+  
+  .cord div {
+    padding: 5px; /* Adjust padding */
+  }
+  
+  .cord div span {
+    font-size: 12px; /* Decrease font size */
+  }
+  
+  .data-container {
+    flex-direction: column; /* Stack data elements vertically */
+    margin-top: 10px; /* Adjust margin */
+  }
+  
+  .data {
+    margin-right: 0; /* Remove margin on small screens */
+  }
+  
+  .text {
+    font-size: 10px; /* Decrease font size */
+  }
+  
+  .owner {
+    padding-top: 30px; /* Adjust padding */
+  }
+}
+
+/* For screens between 600px and 1024px */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    width: 80%; /* Adjust width as needed */
+  }
+  
+  .image img {
+    width: 140px; /* Adjust image size */
+    height: 140px; /* Adjust image size */
+  }
+  
+  .temp, .location, .country {
+    font-size: 30px; /* Decrease font size */
+  }
+  
+  .cord div {
+    padding: 8px; /* Adjust padding */
+  }
+  
+  .cord div span {
+    font-size: 14px; /* Decrease font size */
+  }
+  
+  .data-container {
+    margin-top: 15px; /* Adjust margin */
+  }
+  
+  .text {
+    font-size: 11px; /* Decrease font size */
+  }
+}
+
+
