@@ -152,7 +152,7 @@ const weathericonmap ={
        {error && <div className="error">{error}</div>}
        {citynotfound&&<div className="city-notfound">City not found</div>}
        <div className="owner">
-        Designed by <span>Saran</span>
+        Designed by <span>Yuvaraj</span>
        </div>
         </div>
     </>
