@@ -88,6 +88,8 @@ const weathericonmap ={
     `
     try{
       let res = await fetch(url);
+      console.log(res);
+
       let data = await res.json();
       
       if(data.cod=== "404"){
@@ -104,7 +106,9 @@ const weathericonmap ={
       setCountry(data.sys.country);
       setLat(data.coord.lat);
       setLog(data.coord.lon);
+
       const weatherIcon=data.weather[0].icon;
+
       setIcon(weathericonmap[weatherIcon] || clear);
       setCityNotFound(false);
     }
@@ -152,7 +156,7 @@ const weathericonmap ={
        {error && <div className="error">{error}</div>}
        {citynotfound&&<div className="city-notfound">City not found</div>}
        <div className="owner">
-        Designed by <span>Yuvaraj</span>
+        Designed by <span>Keerthana</span>
        </div>
         </div>
     </>
